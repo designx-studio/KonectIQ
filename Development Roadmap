@@ -1,0 +1,61 @@
+KonectIQ Development Roadmap
+
+As we are in active Alpha development, this roadmap provides a high-level view of our priorities and planned features.
+
+Phase 1: Alpha (Current Focus)
+
+The primary goal of Alpha is establishing core technical hygiene checks and ensuring stable read-only cloud connectivity.
+
+Feature Area
+
+Target Completion
+
+Details
+
+Connectivity
+
+Complete
+
+Secure read-only integration with AWS.
+
+SkyEdge™ Engine
+
+80% Complete
+
+Implementation of initial three cost-saving checks (Idle VM, Over-provisioned DB, Orphaned Storage).
+
+Shield™ Security
+
+50% Complete
+
+Implementation of initial two security checks (Public S3/Storage Access, Unencrypted Volumes).
+
+Dashboard
+
+60% Complete
+
+Core UI for viewing the Top 3 Fixes and estimated savings.
+
+Phase 2: Beta (Next 3-6 Months)
+
+Beta will focus on expanding cloud coverage and introducing more sophisticated analysis.
+
+Multi-Cloud Expansion: Full read-only integration for Microsoft Azure resources.
+
+Deeper Cost Analysis: Implement checks for load balancers without targets and auto-scaling groups with misconfigured minimum sizes.
+
+Alerting System: Basic email/notification integration for high-risk findings.
+
+User Management: Basic user profile and settings configuration via Firestore.
+
+Phase 3: General Availability (TBD)
+
+The goal for GA is a stable, reliable tool with broad coverage.
+
+Full Multi-Cloud Support: Integration for Google Cloud Platform (GCP).
+
+Reporting: Historical trend reports on cloud waste reduction over time.
+
+Advanced Security: Checks for IAM roles with excessive permissions and rotation of access keys.
+
+On-Premises Hybrid Support: Initial exploration of monitoring hybrid environments.
