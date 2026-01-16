@@ -1,85 +1,154 @@
-KonectIQ: The Technical Hygiene Manager for Multi-Cloud SMEs
+KonectIQ v1: The Technical Hygiene Manager for Multi-Cloud SMEs
+Unified Network, Security, and Backup Platform
 
-🛠 Project Status: Actively Developing (Alpha)
+KonectIQ is a modular control platform for MSPs (Managed Service Providers), independent consultants, and small IT teams operating in cost-sensitive environments.
+It centralizes network management, security enforcement, and backup operations into a single, minimal control plane.
 
-🚀 Overview
+This repository represents v1. The focus is reliability, clarity, and operational value.
 
-KonectIQ is a purpose-built Multi-Cloud Management tool we are building that is focused on driving immediate, actionable Cost Savings and Security Improvements for Small and Medium Enterprises (SMEs), particularly those operating in the African market.
+Purpose
 
-We are currently developing the core functionality that cuts through the complexity of enterprise-grade FinOps platforms to provide a simple, powerful solution for Technical Hygiene. Our goal is simple: to stop cloud waste and close critical security risks without requiring an expensive expert.
+KonectIQ exists to solve three practical problems for small operators:
 
-💡 Why KonectIQ?
+Fragmented tooling across network, security, and backup
 
-Traditional cloud management tools are often too complex, require too many permissions, or focus on financial forecasting (FinOps). KonectIQ focuses on the quick wins that are often missed: idle servers, over-provisioned machines, and exposed security vulnerabilities.
+Manual processes that do not scale
 
-We are read-only by design, meaning KonectIQ only provides highly accurate recommendations—the final implementation is always in your control.
+Enterprise platforms that are too heavy, expensive, or complex
 
-✨ Key Features
+It provides one interface to manage, secure, and monitor distributed environments with minimal infrastructure.
 
-1. SkyEdge™ AI Engine
+Core Principles
 
-Our proprietary engine continuously scans your connected cloud accounts (AWS, Azure, GCP) to identify two core areas of waste and risk:
+Modular design: only use what you need
 
-Cloud Waste Detection: Finds resources that are running but idle (ghost servers), are sized too large for their usage (over-provisioning), or have been orphaned (unattached storage).
+Automation first: reduce manual operational work
 
-Cost Projection: Calculates the exact dollar amount you will save if you implement the recommended fix.
+Low overhead: deployable on modest cloud or edge systems
 
-2. Shield™ Security Recommendations
+Cost awareness: designed for budget-constrained environments
 
-KonectIQ automatically checks for critical, high-impact security misconfigurations that often lead to data breaches:
+Operator focus: built for real production use, not demos
 
-Public Access: Identifies storage buckets, databases, or network ports publicly exposed to the internet.
+Modules (v1)
 
-Vulnerability Alerts: Flags resources running on outdated operating systems or versions.
+Only the following modules are supported:
 
-3. Actionable Dashboard
+CommandView™ – Central management and control
 
-Instead of complex reports, KonectIQ presents the Top 3 Fixes on a clean, single dashboard, prioritizing recommendations by maximum cost savings or highest security risk.
+Pulse™ – Minimal dashboard for critical status and alerts
 
-Category
+SecureMesh™ – Network segmentation and access control
 
-Problem
+Shield™ – Endpoint security and threat response
 
-KonectIQ Recommendation
+Vault™ – Backup and recovery management
 
-Estimated Monthly Savings
+DeviceScan™ – Network discovery and asset inventory
 
-Cost
+EdgeBox™ – Optional on-prem edge node
 
-web-app-vm-dev running 24/7.
+SkyEdge™ – Cloud edge services
 
-Implement a schedule to shut down the VM outside of business hours.
+PilotView™ – Read-only client visibility
 
-$78.00
+Security and backup functions are powered by SkyLock Engine™, which integrates SASE (Secure Access Service Edge) and EDR (Endpoint Detection and Response) components.
 
-Security
+Who This Is For
 
-customer-data-s3-bucket public write access.
+MSPs managing small to mid-size environments
 
-Change bucket policy to private (immediate fix).
+Independent cloud, network, and security consultants
 
-Risk Closed
+Teams in bandwidth-limited or cost-constrained regions
 
-Cost
+Not intended for:
 
-staging-db-01 has been idle for 60 days.
+General ITSM platforms
 
-Terminate the resource and associated volumes.
+Full SOC (Security Operations Center) workflows
 
-$22.50
+Custom application development frameworks
 
-🛠 Technology Stack
+Deployment
 
-KonectIQ is a modern, single-page application built for speed and reliability.
+KonectIQ v1 supports two practical models:
 
-Frontend: React (JSX) with Tailwind CSS for a fully responsive, modern user experience.
+Cloud-Hosted
 
-State Management: React Hooks and Context API for streamlined state.
+Single VM or container host
 
-Data Persistence (User & App State): Google Firestore, using a secure, collaborative model to store user and application configuration.
+Central management for multiple clients
 
-API Integration: Secure, non-modifying integration points with AWS, Azure, and GCP APIs (via proxy) to perform read-only resource discovery and metric analysis.
+Lowest operational overhead
 
-📄 License
+Edge Deployment (EdgeBox™)
 
-This project is licensed under the MIT License - see the LICENSE.md file for details.
+Small on-prem device
+
+Designed for unreliable or limited connectivity
+
+Syncs with CommandView™ when online
+
+What v1 Provides
+
+Centralized visibility across networks and devices
+
+Automated discovery and monitoring
+
+Policy-based security and access controls
+
+Integrated backup and recovery management
+
+A deliberately minimal dashboard focused on operational signals
+
+What it does not attempt:
+
+Full SOC functionality
+
+Broad ITSM workflows
+
+Developer-oriented extensibility
+
+High-Level Usage
+
+Deploy CommandView™ (cloud or EdgeBox™)
+
+Connect sites using SecureMesh™
+
+Discover assets with DeviceScan™
+
+Enable protection via Shield™ and Vault™
+
+Monitor through Pulse™
+
+Detailed operational guides and playbooks are maintained outside this repository.
+
+Roadmap Direction
+
+KonectIQ will remain:
+
+Lean in interface
+
+Modular in architecture
+
+Focused on automation and security
+
+Built for solo founders and small MSP teams
+
+Future releases will expand integrations and reporting without increasing complexity.
+
+License
+
+Proprietary Software
+
+This software is not open source.
+
+Source code is provided for evaluation, review, or authorized deployment only.
+
+Modification, redistribution, commercial hosting, or use in managed service offerings is not permitted without a valid license.
+
+All rights reserved.
+
+For licensing, partnerships, or commercial use, contact:
+sales@designx.co.ke
