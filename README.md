@@ -1,154 +1,150 @@
-KonectIQ v1: The Technical Hygiene Manager for Multi-Cloud SMEs
-Unified Network, Security, and Backup Platform
+# KonectIQ v1
 
-KonectIQ is a modular control platform for MSPs (Managed Service Providers), independent consultants, and small IT teams operating in cost-sensitive environments.
-It centralizes network management, security enforcement, and backup operations into a single, minimal control plane.
+**Unified Network, Security, and Backup Management for Multi-Cloud SMEs**
 
-This repository represents v1. The focus is reliability, clarity, and operational value.
+---
 
-Purpose
+## Overview
 
-KonectIQ exists to solve three practical problems for small operators:
+KonectIQ is a lightweight, modular control platform designed for Managed Service Providers (MSPs), independent consultants, and small IT teams operating in resource-constrained environments. It consolidates network management, security enforcement, and backup operations into a single control plane—eliminating tool sprawl and reducing manual overhead.
 
-Fragmented tooling across network, security, and backup
+**Built for:** Reliability. Clarity. Operational efficiency.
 
-Manual processes that do not scale
+---
 
-Enterprise platforms that are too heavy, expensive, or complex
+## Why KonectIQ?
 
-It provides one interface to manage, secure, and monitor distributed environments with minimal infrastructure.
+Small operators face three recurring challenges:
 
-Core Principles
+1. **Fragmented tooling** – Juggling separate systems for network, security, and backup
+2. **Manual processes** – Operations that don't scale with limited staff
+3. **Overbuilt platforms** – Enterprise solutions that are too complex, expensive, or resource-intensive
 
-Modular design: only use what you need
+KonectIQ provides one unified interface to manage, secure, and monitor distributed environments—without the enterprise bloat.
 
-Automation first: reduce manual operational work
+---
 
-Low overhead: deployable on modest cloud or edge systems
+## Design Principles
 
-Cost awareness: designed for budget-constrained environments
+- **Modular by design** – Deploy only what you need
+- **Automation-first** – Reduce repetitive manual work
+- **Low overhead** – Runs on modest cloud or edge infrastructure
+- **Cost-conscious** – Built for budget-aware teams
+- **Operator-focused** – Designed for production use, not demos
 
-Operator focus: built for real production use, not demos
+---
 
-Modules (v1)
+## Modules (v1)
 
-Only the following modules are supported:
+KonectIQ v1 includes the following core modules:
 
-CommandView™ – Central management and control
+| Module | Purpose |
+|--------|---------|
+| **CommandView™** | Central management and orchestration |
+| **Pulse™** | Minimal dashboard for critical status and alerts |
+| **SecureMesh™** | Network segmentation and access control |
+| **Shield™** | Endpoint security and threat response |
+| **Vault™** | Backup and recovery management |
+| **DeviceScan™** | Network discovery and asset inventory |
+| **EdgeBox™** | Optional on-premises edge node |
+| **SkyEdge™** | Cloud edge services |
+| **PilotView™** | Read-only client visibility portal |
 
-Pulse™ – Minimal dashboard for critical status and alerts
+**Security and backup capabilities** are powered by the **SkyLock Engine™**, which integrates SASE (Secure Access Service Edge) and EDR (Endpoint Detection and Response) components.
 
-SecureMesh™ – Network segmentation and access control
+---
 
-Shield™ – Endpoint security and threat response
+## Who Should Use KonectIQ?
 
-Vault™ – Backup and recovery management
+### Ideal For:
+- MSPs managing small to mid-sized client environments
+- Independent consultants specializing in cloud, network, or security
+- IT teams in regions with limited bandwidth or budget constraints
 
-DeviceScan™ – Network discovery and asset inventory
+### Not Designed For:
+- General ITSM platforms
+- Full SOC (Security Operations Center) workflows
+- Custom application development or extensibility frameworks
 
-EdgeBox™ – Optional on-prem edge node
+---
 
-SkyEdge™ – Cloud edge services
+## Deployment Models
 
-PilotView™ – Read-only client visibility
+KonectIQ v1 supports two deployment strategies:
 
-Security and backup functions are powered by SkyLock Engine™, which integrates SASE (Secure Access Service Edge) and EDR (Endpoint Detection and Response) components.
+### 1. Cloud-Hosted
+- Single VM or containerized deployment
+- Centralized management for multiple client sites
+- Minimal operational overhead
 
-Who This Is For
+### 2. Edge Deployment (EdgeBox™)
+- Compact on-premises appliance
+- Designed for unreliable or bandwidth-limited connectivity
+- Synchronizes with CommandView™ when online
 
-MSPs managing small to mid-size environments
+---
 
-Independent cloud, network, and security consultants
+## What KonectIQ Provides
 
-Teams in bandwidth-limited or cost-constrained regions
+✅ **Centralized visibility** across networks, devices, and endpoints  
+✅ **Automated discovery** and continuous monitoring  
+✅ **Policy-based security** and zero-trust access controls  
+✅ **Integrated backup and recovery** workflows  
+✅ **Minimal, signal-focused dashboard** (Pulse™)
 
-Not intended for:
+### What It Doesn't Attempt
 
-General ITSM platforms
+❌ Full SOC or SIEM functionality  
+❌ Broad ITSM ticketing and workflow management  
+❌ Developer APIs or extensibility layers  
 
-Full SOC (Security Operations Center) workflows
+---
 
-Custom application development frameworks
+## Quick Start
 
-Deployment
+1. **Deploy CommandView™** (cloud-hosted or EdgeBox™)
+2. **Connect sites** using SecureMesh™
+3. **Discover assets** with DeviceScan™
+4. **Enable protection** via Shield™ (security) and Vault™ (backup)
+5. **Monitor operations** through Pulse™
 
-KonectIQ v1 supports two practical models:
+> Detailed deployment guides, playbooks, and operational documentation are maintained separately.
 
-Cloud-Hosted
+---
 
-Single VM or container host
-
-Central management for multiple clients
-
-Lowest operational overhead
-
-Edge Deployment (EdgeBox™)
-
-Small on-prem device
-
-Designed for unreliable or limited connectivity
-
-Syncs with CommandView™ when online
-
-What v1 Provides
-
-Centralized visibility across networks and devices
-
-Automated discovery and monitoring
-
-Policy-based security and access controls
-
-Integrated backup and recovery management
-
-A deliberately minimal dashboard focused on operational signals
-
-What it does not attempt:
-
-Full SOC functionality
-
-Broad ITSM workflows
-
-Developer-oriented extensibility
-
-High-Level Usage
-
-Deploy CommandView™ (cloud or EdgeBox™)
-
-Connect sites using SecureMesh™
-
-Discover assets with DeviceScan™
-
-Enable protection via Shield™ and Vault™
-
-Monitor through Pulse™
-
-Detailed operational guides and playbooks are maintained outside this repository.
-
-Roadmap Direction
+## Roadmap
 
 KonectIQ will remain:
 
-Lean in interface
+- **Lean** in interface and resource consumption
+- **Modular** in architecture
+- **Automation-focused** with security at the core
+- **Purpose-built** for solo founders and small MSP teams
 
-Modular in architecture
+Future releases will expand integrations and reporting capabilities—without sacrificing simplicity.
 
-Focused on automation and security
+---
 
-Built for solo founders and small MSP teams
+## License
 
-Future releases will expand integrations and reporting without increasing complexity.
+**Proprietary Software**
 
-License
+This software is **not open source**. Source code is provided for evaluation, review, or authorized deployment only.
 
-Proprietary Software
-
-This software is not open source.
-
-Source code is provided for evaluation, review, or authorized deployment only.
-
-Modification, redistribution, commercial hosting, or use in managed service offerings is not permitted without a valid license.
+**Restrictions:**
+- Modification, redistribution, or derivative works are not permitted
+- Commercial hosting or resale requires a valid license
+- Use in managed service offerings requires prior authorization
 
 All rights reserved.
 
-For licensing, partnerships, or commercial use, contact:
-sales@designx.co.ke
+---
+
+## Contact
+
+**For licensing, partnerships, or commercial inquiries:**  
+📧 sales@designx.co.ke
+
+---
+
+**KonectIQ v1** – Technical hygiene for the modern MSP.
